@@ -27,7 +27,7 @@ public class MultiplicationTableIteration {
         loopMultiplicationTable(random.nextInt(9) + 1);
         if (matchCounter == CHECK_COUNT) {
             System.out.println("correct.");
-        } else {x
+        } else {
             System.out.println("discorrect.");
         }
     }
