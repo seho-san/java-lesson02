@@ -22,9 +22,9 @@ public class DoWhileIteration {
         checkValue();
         if (currentValue >= TARGET_VALUE) {
             System.out.println("최종 점수: 0");
-            System.out.println("패배했습니다.");
+            System.out.println("lose.");
         } else {
-            System.out.println("최종 점수: " + (TARGET_VALUE - (TARGET_VALUE - currentValue)));
+            System.out.println("final score: " + (TARGET_VALUE - (TARGET_VALUE - currentValue)));
         }
     }
 
@@ -37,7 +37,9 @@ public class DoWhileIteration {
      * - do-while문을 반드시 이용해야 합니다.
      */
     private static void checkValue() {
-        throw new RuntimeException("이 코드 라인을 지우고, 이곳에서 작성하십시오.");
+        do{
+            increaseValue();
+        }while(stopGame()==false);
     }
 
     public static boolean stopGame() {
